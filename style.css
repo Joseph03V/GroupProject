@@ -1,0 +1,22 @@
+* {
+    background-color: lightblue;
+}
+header {
+    width: 100%;
+    height: 200px;
+    border: 2px solid black;
+}
+header h1 {
+    display: flex;
+    justify-content: space-around;
+}
+#search {
+    display: flex;
+
+}
+header a {
+
+}
+#repeat {
+    background-repeat: repeat;
+}
