@@ -5,20 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Doggie Date</title>
 </head>
 <div id="repeat">
-    <i class="fa fa-paw" style="font-size:36px"></i>
+    <!--<i class="fa fa-paw" style="font-size:36px"></i> !-->
 </div>
 <body>
     <header>
-        <h1>Where the hottest Doggie Dates come to play!</h1>   
+        <div class="header">
+        <img id= "icon" src="https://i.ibb.co/TR1X3Rz/556-5562232-paw-print-heart-clipart.png" alt="556-5562232-paw-print-heart-clipart">
+       
+        <h1>Where the hottest Doggie Dates come to play!</h1>
         <a id="profile" href="#profile" target="_blank">My Pawfile</a>
         <a id="browse" href="#browse"  target="_blank">Browse</a>
+    </div>
     </header>
-        <form id="search">
-            <input type="text"></form>
-        <button>Search Doggie Dates</button>
+    <div id="searchbar" class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s4">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1"></label>
+              <button>Search Doggie Dates</button>
+            </div>
+          </div>
+        </form>
+      </div>
+        
+        
     <script src="./script.js"></script>
+
 </body>
 </html>
