@@ -57,3 +57,74 @@ header {
 #locpref{
 
 }
+.browseprofiles{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    border:5px black;
+   
+}
+#profile1{
+    background-color: lightpink;
+    border-style:solid;
+}
+#profile2{
+    background-color: lightpink;
+    border-style:solid;
+}
+#profile3{
+    background-color: lightpink;
+    border-style:solid;
+}
+#profile4{
+    background-color: lightpink;
+    border-style:solid;
+}
+#profile5{
+    background-color: lightpink;
+    border-style:solid;
+}
+#profile6{
+    background-color: lightpink;
+    border-style:solid;
+}
+.browsephotos{
+    border-radius: 100%;
+}
+.links{
+    font-family: 'Crete Round', serif;
+    width:250px;
+    
+}
+#profile1:hover{
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+}
+#profile2:hover{
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+}
+#profile3:hover{
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+}
+#profile4:hover{
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+}
+#profile5:hover{
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+}
+#profile6:hover{
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+}
+
