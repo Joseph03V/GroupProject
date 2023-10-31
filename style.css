@@ -85,6 +85,10 @@ span h4 {
 #searchbutton {
     margin-left: 5px;
 }
+#goldie {
+    width: 200px;
+    
+}
 @media (max-width: 768px) {
     header {
         height: fit-content;
