@@ -19,7 +19,24 @@ function getApi() {
 function showPic() {
     goldie.style.display = 'block'
 }
-$('goldie').toggleClass('click', showPic)
+// $('goldie').toggleClass('click', showPic)
+
+    // let auto = document.getElementById('searchbar')
+    $( function() {
+        let availableTags = [
+          "Pitbull",
+          "Golden Retriever",
+          "Chihuahua",
+          "Yellow Lab",
+          "Border Collie",
+          "Armenian Gamper",
+        ];
+        $( "#searchbar" ).autocomplete({
+          source: availableTags
+        });
+      } );
+
+ 
 
 document.getElementById("profileForm").addEventListener("submit", function(event){
 event.preventDefault()
