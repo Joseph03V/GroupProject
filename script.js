@@ -1,6 +1,26 @@
+
 let check = document.getElementById('golden')
-let goldie = document.getElementById('goldie')
+let goldie = document.getElementById('golden')
 goldie.style.display = 'none'
+$(document).ready(function(){
+    $( function() {
+        let availableTags = [
+          "Pitbull",
+          "Golden Retriever",
+          "Chihuahua",
+          "Yellow Lab",
+          "Border Collie",
+          "Armenian Gamper",
+        ];
+        $( "#searchbar" ).autocomplete({
+          source: availableTags
+        });
+      } );
+  });
+
+
+
+
 
 function getApi() {
     let dogApi = 'https://www.mapquestapi.com/geocoding/v1/address?key=baOsBcecBVf88PhrMAJAWa7jQppd2hIV&location=Washington,DC'
@@ -19,23 +39,10 @@ function getApi() {
 function showPic() {
     goldie.style.display = 'block'
 }
-// $('goldie').toggleClass('click', showPic)
+$('golden').toggleClass('click', showPic)
 
     // let auto = document.getElementById('searchbar')
-    $( function() {
-        let availableTags = [
-          "Pitbull",
-          "Golden Retriever",
-          "Chihuahua",
-          "Yellow Lab",
-          "Border Collie",
-          "Armenian Gamper",
-        ];
-        $( "#searchbar" ).autocomplete({
-          source: availableTags
-        });
-      } );
-
+    
  
 
 document.getElementById("profileForm").addEventListener("submit", function(event){
