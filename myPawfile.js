@@ -1,4 +1,6 @@
 create = document.getElementById('create')
+let profilePic = document.getElementById('profile-pic')
+let inputFile = document.getElementById('input-file')
 profileInfo = document.getElementById("profileForm")
 profileInfo.addEventListener("submit", function(event){
 event.preventDefault()
@@ -20,3 +22,6 @@ function createPro() {
     create.style.display = 'none'
 }
 create.addEventListener('click', createPro)
+inputFile.onchange = function() {
+    profilePic.src = URL.createObjectURL(inputFile.files[0])
+}
