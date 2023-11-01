@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myPawfile.css">
+    <title>My Pawfile</title>
+</head>
+<body>
+    <div class="profile-card">
+        <h1>My Pawfile</h1>
+        <img class="image" src="https://i.ibb.co/bRLCM0m/200x200-image.gif" alt="image holder">
+        <form id="profileForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <label for="interests">Interests:</label>
+            <textarea id="interests" name="interests" required></textarea><br>
+
+            <button type="submit">Create Profile</button>
+        </form>
+        <script src="./script.js"></script>
+    </div>
+</body>
+</html>
