@@ -1,3 +1,4 @@
+create = document.getElementById('create')
 profileInfo = document.getElementById("profileForm")
 profileInfo.addEventListener("submit", function(event){
 event.preventDefault()
@@ -15,3 +16,7 @@ event.preventDefault()
 
     localStorage.setItem("profileData", JSON.stringify(formData))
 })
+function createPro() {
+    create.style.display = 'none'
+}
+create.addEventListener('click', createPro)
