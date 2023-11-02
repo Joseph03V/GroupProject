@@ -65,3 +65,10 @@ button:hover {
 #input-file {
     display: none;
 }
+#map{
+    margin:auto;
+    margin-top:20px;
+    width:300px;
+    height:200px;
+
+}
