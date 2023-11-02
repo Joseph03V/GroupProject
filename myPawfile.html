@@ -9,7 +9,9 @@
 <body>
     <div class="profile-card">
         <h1>My Pawfile</h1>
-        <img class="image" src="https://i.ibb.co/bRLCM0m/200x200-image.gif" alt="image holder">
+        <img id="profile-pic" class="image" src="https://i.ibb.co/bRLCM0m/200x200-image.gif" alt="image holder">
+        <label id="profile" for="input-file">Update Image</label>
+        <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
         <form id="profileForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br>
@@ -27,9 +29,9 @@
             <label for="interests">Interests:</label>
             <textarea id="interests" name="interests" required></textarea><br>
 
-            <button type="submit">Create Profile</button>
+            <button id="create" type="submit">Create Profile</button>
         </form>
-        <script src="./script.js"></script>
+        <script src="./myPawfile.js"></script>
     </div>
 </body>
 </html>

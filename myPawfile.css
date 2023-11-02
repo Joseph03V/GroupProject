@@ -53,3 +53,15 @@ button {
 button:hover {
     background-color: #3f9243;
 }
+#profile {
+    display: block;
+    width: 150px;
+    background-color: lightpink;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#input-file {
+    display: none;
+}
