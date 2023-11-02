@@ -65,3 +65,14 @@ button:hover {
 #input-file {
     display: none;
 }
+
+@media (max-width: 600px){
+    .profile-card {
+        max-width: 90%
+    }
+
+    .image{
+        width: 150px;
+        height: 150px;
+    }
+}
