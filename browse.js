@@ -20,5 +20,11 @@ window.onload = function() {
     L.marker([30.266666, -97.733330], { icon: myIcon}).addTo(map)
     L.marker([30.6333, -97.6780], { icon: myIcon}).addTo(map)
     L.marker([31.7619 , -106.4850], { icon: myIcon}).addTo(map)
+
+    L.marker([30.4548 , -97.6223], { icon: myIcon}).addTo(map)
+
+    L.marker([30.5427 , -97.5467], { icon: myIcon}).addTo(map)
+
+    L.marker([29.4252 , -98.4946], { icon: myIcon}).addTo(map)
     map.addControl(L.mapquest.control());
   }
