@@ -48,6 +48,15 @@ header {
     text-align:center;
     width:25%;
 }
+.aboutMep{
+    width:70%;
+    text-align: center;
+    padding-left: 580px;
+}
+.pfp{
+    margin-left: 45%;
+    padding-bottom: 60px;
+}
 #relationshipgoal{
     margin-bottom: 0;
 }
@@ -56,9 +65,7 @@ header {
 #checkbox{
     text-align: center;
 }
-#locpref{
 
-}
 .browseprofiles{
     display:flex;
     flex-direction: row;
