@@ -8,7 +8,7 @@ body {
     background-color: lightpink;
 }
 
-.profile-card {
+#profile-card {
     background-color: lightblue;
     border: 1px solid #ccc;
     padding: 20px;
@@ -17,6 +17,8 @@ body {
     text-align: center;
     max-width: 400px;
     width: 100%;
+    margin-top: 250px;
+    padding-top: 200px;
 }
 .image{
     border-radius: 180%;
