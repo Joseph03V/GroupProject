@@ -1,3 +1,4 @@
+let currentDay = dayjs().format('dddd, MMMM D YYYY, h:mm:ss a')
 function generateRandomNumber() {
     return Math.floor(Math.random() * 100) + 1
 }
@@ -7,7 +8,7 @@ function checkMatch() {
     var messageElement = document.getElementById('message')
 
     if (randomNumber % 2 === 0) {
-        messageElement.textContent = "Congratulations! They snifffed you back!"
+        messageElement.textContent = "Congratulations! They snifffed you back at" + currentDay + "!"
     } else {
         messageElement.textContent = "Sorry pal, they don't want to sniff you."
     }
