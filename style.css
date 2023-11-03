@@ -103,7 +103,28 @@ span h4 {
 }
 #goldie {
     width: 200px;
-    
+}
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+#search {
+    font-size: 1rem;
+}
+.user-cards {
+    display: grid;
+    grid-template-columns: repeat(auto0fill, minmax(150px, 1fr));
+    gap: .25rem;
+    margin-top: 1rem;
+}
+.card {
+    border: 1px solid black;
+    background-color: white;
+    padding: .5rem;
+}
+.hide {
+    display: none;
 }
 @media (max-width: 768px) {
     header {

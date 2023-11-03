@@ -27,17 +27,4 @@ inputFile.onchange = function() {
 }
 
 
-// L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
-
-//   function icon(){
-//     let link = 'https://assets.mapquestapi.com/icon/v2/marker@2x.png'
-//     L.mapquest.key = 'wDqE9BnvH5OgxagEI2OQqf5lI1s4yZ12';
-
-//     fetch(link)
-//     .then(function(response){
-//         return response.json()
-//     })
-//   }
-  
-//   icon();
 
