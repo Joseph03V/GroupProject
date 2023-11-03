@@ -81,11 +81,13 @@ header h1 {
     border:5px black;
    
 }
-#profile1 , #profile2, #profile3, #profile4, #profile5, #profile6{
+#profile1 , #profile2, #profile3, #profile4, #profile5,
+#profile6 ,#profile7, #profile8, #profile9, #profile10{
     background-color: lightpink;
     border-style:solid;
     margin-right: 20px;
     margin-left: 20px;
+    margin-top: 20px;
 }
 
 .browsephotos{
@@ -122,6 +124,26 @@ header h1 {
     transition-duration: 0.5s;
 }
 #profile6:hover{
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+}
+#profile7:hover{
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+}
+#profile8:hover{
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+}
+#profile9:hover{
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+}
+#profile10:hover{
     box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
     transform: translateY(-5px);
     transition-duration: 0.5s;
