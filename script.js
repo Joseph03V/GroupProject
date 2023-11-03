@@ -1,27 +1,3 @@
-
-let check = document.getElementById('golden')
-let goldie = document.getElementById('golden')
-goldie.style.display = 'none'
-$(document).ready(function(){
-    $( function() {
-        let availableTags = [
-          "Pitbull",
-          "Golden Retriever",
-          "Chihuahua",
-          "Yellow Lab",
-          "Border Collie",
-          "Armenian Gamper",
-        ];
-        $( "#searchbar" ).autocomplete({
-          source: availableTags
-        });
-      } );
-  });
-
-
-
-
-
 function getApi() {
     let dogApi = 'https://www.mapquestapi.com/geocoding/v1/address?key=baOsBcecBVf88PhrMAJAWa7jQppd2hIV&location=Washington,DC'
     
@@ -36,14 +12,15 @@ function getApi() {
         
     })
 }
-function showPic() {
-    goldie.style.display = 'block'
-}
-$('golden').toggleClass('click', showPic)
 
 const userCardTemplate = document.querySelector("[data-user-template]")
 const userCardContainer = document.querySelector("[data-user-cards-container]")
 const searchInput = document.querySelector("[data-search]")
+const userArr = [names.idx]
+
+function showPro() {
+
+}
 
 // let users = [ ]
 // searchButton = document.getElementById('searchbutton')
@@ -73,6 +50,7 @@ const searchInput = document.querySelector("[data-search]")
 //         userCardContainer.append(card)
 //         card.classList.add('hide')
 //         return {name: names[idx], email: email[idx], element:card }
+
        
 //     })
 
