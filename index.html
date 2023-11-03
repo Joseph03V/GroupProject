@@ -9,7 +9,6 @@
     <title>Doggie Date</title>
 </head>
 <div id="repeat">
-    <!--<i class="fa fa-paw" style="font-size:36px"></i> !-->
 </div>
 <body>
     <header>
@@ -34,10 +33,19 @@
     <div id="searchbar" class="row">
         <form class="col s12">
           <div class="row">
-            <div class="input-field col s4">
-              <textarea id="searchbar" class="materialize-textarea"></textarea>
-              <label for="searchbar"></label>
+            <div class="input-field col s4 search-wrapper">
+              <!-- <textarea id="searchbar" class="materialize-textarea"></textarea> -->
+              <!-- <label for="search">Search Users</label> -->
+              <input type="search" id="search" data-search>
               <button id="searchbutton">Search Doggie Dates</button>
+            </div>
+            <div class="user-cards" data-user-cards-container>
+              <template data-user-template>
+              <div class="card">
+                <div class="header" data-header></div>
+                <div class="body" data-body></div>
+              </div>
+            </template>
             </div>
           </div>
         </form>
