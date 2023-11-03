@@ -35,6 +35,8 @@ function initMap(latitude, longitude) {
         zoom: 12
     });
 
+
+
     var myIcon = L.icon({
         iconUrl: 'https://assets.mapquestapi.com/icon/v2/marker@2x.png',
         iconSize: [38, 48],
@@ -59,6 +61,7 @@ function getCoordinates() {
         }
     );
 }
+
 
 var locationButton = document.getElementById("location");
 locationButton.addEventListener("click", getCoordinates);
