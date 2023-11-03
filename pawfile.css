@@ -4,7 +4,7 @@ body{
 #icon{
     width:100px;
     height:100px;
-    margin-right:auto;
+    margin-right:100px;
 }
 header {
     width: 100%;
@@ -12,9 +12,14 @@ header {
     border-bottom: 2px solid black;
     background-color: lightblue;
 }
+header h1 {
+    font-size: 2rem;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    width:auto;
+}
 .header{
     display:flex;
-    justify-content: space-around;
 }
 .header3{
     margin:auto;
@@ -31,9 +36,6 @@ header {
     box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
     transform: translateY(-3px);
     transition-duration: 0.5s;
-}
-#myPawfile{
-    margin-right:42%;
 }
 
 #media{
@@ -70,35 +72,18 @@ header {
 .browseprofiles{
     display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
     text-align: center;
     border:5px black;
    
 }
-#profile1{
+#profile1 , #profile2, #profile3, #profile4, #profile5, #profile6{
     background-color: lightpink;
     border-style:solid;
+    margin-right: 20px;
+    margin-left: 20px;
 }
-#profile2{
-    background-color: lightpink;
-    border-style:solid;
-}
-#profile3{
-    background-color: lightpink;
-    border-style:solid;
-}
-#profile4{
-    background-color: lightpink;
-    border-style:solid;
-}
-#profile5{
-    background-color: lightpink;
-    border-style:solid;
-}
-#profile6{
-    background-color: lightpink;
-    border-style:solid;
-}
+
 .browsephotos{
     border-radius: 100%;
 }
@@ -143,12 +128,48 @@ header {
     width:300px;
     height:200px;
 }
+
+@media (max-width: 1200px) {
+    .browseprofiles{
+        margin-left: 150px;
+    }
+    #profile1, #profile2, #profile3, #profile4 ,#profile5, #profile6{
+        margin-top: 20px;
+    }
+    .header{
+        justify-content: none;
+    }
+    #icon {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 900px) {
+    .browseprofiles{
+        display:inline;
+    }
+    #profile1, #profile2, #profile3, #profile4 ,#profile5, #profile6{
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .links{
+        margin-left: 35%;
+    }
+    #icon {
+        margin-right: 10px;
+    }
+
+}
+
 @media (max-width: 768px) {
     .browseprofiles{
         display:inline;
     }
     #profile1, #profile2, #profile3, #profile4 ,#profile5, #profile6{
         margin-top: 20px;
+    }
+    header h1 {
+        padding-left:5px;
     }
 }
 
@@ -158,5 +179,17 @@ header {
     }
     #profile1, #profile2, #profile3, #profile4 ,#profile5, #profile6{
         margin-top: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .browseprofiles{
+        display:inline;
+    }
+    #profile1, #profile2, #profile3, #profile4 ,#profile5, #profile6{
+        margin-top: 20px;
+    }
+    header{
+        height: 200px;
     }
 }
