@@ -1,5 +1,6 @@
 body{
     background-color: lightgray;
+    text-align: center;
 }
 #icon{
     width:100px;
@@ -32,18 +33,10 @@ header h1 {
     border:1px solid black;
     border-radius:20px;
 }
-.header3:hover{
-    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
-    transform: translateY(-3px);
-    transition-duration: 0.5s;
-}
+
 #myPawfile{
-<<<<<<< HEAD
-    margin-right:42%;
-=======
     margin-right:32%;
      position: fixed; 
->>>>>>> 153503867742b9df01cf848747ee5cd768ed1694
 }
 
 #media{
@@ -62,11 +55,7 @@ header h1 {
 .aboutMep{
     width:70%;
     text-align: center;
-    padding-left: 580px;
-}
-.pfp{
-    margin-left: 45%;
-    padding-bottom: 60px;
+    padding-left: 500px;
 }
 #relationshipgoal{
     margin-bottom: 0;
@@ -101,57 +90,6 @@ header h1 {
     font-family: 'Crete Round', serif;
     width:250px;
 }
-
-#profile1:hover{
-    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
-    transform: translateY(-5px);
-    transition-duration: 0.5s;
-}
-#profile2:hover{
-    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
-    transform: translateY(-5px);
-    transition-duration: 0.5s;
-}
-#profile3:hover{
-    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
-    transform: translateY(-5px);
-    transition-duration: 0.5s;
-}
-#profile4:hover{
-    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
-    transform: translateY(-5px);
-    transition-duration: 0.5s;
-}
-#profile5:hover{
-    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
-    transform: translateY(-5px);
-    transition-duration: 0.5s;
-}
-#profile6:hover{
-    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
-    transform: translateY(-5px);
-    transition-duration: 0.5s;
-}
-#profile7:hover{
-    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
-    transform: translateY(-5px);
-    transition-duration: 0.5s;
-}
-#profile8:hover{
-    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
-    transform: translateY(-5px);
-    transition-duration: 0.5s;
-}
-#profile9:hover{
-    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
-    transform: translateY(-5px);
-    transition-duration: 0.5s;
-}
-#profile10:hover{
-    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.5);
-    transform: translateY(-5px);
-    transition-duration: 0.5s;
-}
 #map{
     margin:auto;
     margin-top:20px;
@@ -159,6 +97,28 @@ header h1 {
     height:200px;
     margin-bottom: 200px;
     padding-bottom: 200px;
+}
+
+#match{
+    width: 250px;
+    height: 50px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#match:hover{
+    background-color: #3f9243;
+}
+
+#message {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
 }
 
 @media (max-width: 1200px) {
@@ -191,27 +151,6 @@ header h1 {
         margin-right: 10px;
     }
 
-}
-
-#match{
-    margin-top: 80px;
-    height: 50px;
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-#match:hover{
-    background-color: #3f9243;
-}
-
-#message {
-    text-align: center;
-    font-size: 60px;
-    font-weight: 700;
 }
 @media (max-width: 768px) {
     .browseprofiles{
