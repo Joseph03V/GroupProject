@@ -19,6 +19,21 @@ profileInfo.addEventListener("submit", function(event){
     
     localStorage.setItem("profileData", JSON.stringify(formData))
 })
+document.addEventListener('DOMContentLoaded', function(){
+    let input = document.getElementById('input-file')
+    let profilePic = document.getElementById('profile-pic')
+
+    function handleImageUpload(event) {
+        let imageFile = event.target.files[0]
+        let reader = new FileReader()
+
+        reader.onload = function (e) {
+            profilePic.src = e.target.result
+        }
+        reader.readAsDataURL(imageFile)
+    }
+    input.addEventListener('change', handleImageUpload)
+})
 function createPro() {
     create.style.display = 'none'
 }
@@ -64,31 +79,4 @@ function getCoordinates() {
 
 
 var locationButton = document.getElementById("location");
-locationButton.addEventListener("change", getCoordinates);
-
-let input = document.getElementById('input-file')
-let WIDTH = .5
-input.addEventListener('click', (event) => {
-    let imageFile = event.target.files[0]
-    let reader = new FileReader
-    reader.readAsDataURL(imageFile)
-    
-    reader.onload = (event) => {
-        let imageURL = event.target.result 
-        let image = document.createElement('img')
-        image.src = imageURL
-        image.onload = (e) => {
-            let canvas = document.createElement('canvas')
-            let ratio = WIDTH / e.target.width 
-            canvas.width = WIDTH 
-            canvas.height = e.target.height * ratio 
-            const context = canvas.getContext('2d')
-            context.drawImage(image, 0, 0, canvas.width, canvas.height)
-            let newImageURL = context.canvas.toDataURL('image/jpeg', 90)
-            let newImage = document.createElement('img')
-            newImage.src = newImageURL
-            document.getElementById('profileForm').appendChild(newImage)
-            console.log(newImage)
-        }
-    }
-})
+locationButton.addEventListener("click", getCoordinates);
