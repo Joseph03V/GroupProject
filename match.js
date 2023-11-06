@@ -8,7 +8,7 @@ function checkMatch() {
     var messageElement = document.getElementById('message')
 
     if (randomNumber % 2 === 0) {
-        messageElement.textContent = "Congratulations! They snifffed you back at" + currentDay + "!"
+        messageElement.textContent = "Congratulations! They snifffed you back on " + currentDay + "!"
     } else {
         messageElement.textContent = "Sorry pal, they don't want to sniff you."
     }
@@ -16,3 +16,4 @@ function checkMatch() {
 
 var matchButton = document.getElementById('match')
 matchButton.addEventListener("click", checkMatch)
+
