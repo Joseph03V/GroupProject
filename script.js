@@ -137,3 +137,13 @@ function codySearch(){
 function profiletab(url){
     window.open(url, '_blank');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var options = {
+        duration: 10,
+        indicators: true,
+        padding: 0
+    };
+    var instances = M.Carousel.init(elems, options);
+});
