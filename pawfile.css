@@ -50,10 +50,10 @@ header h1 {
 }
 #aboutmeinfo{
     display:block;
-    margin-left:auto;
-    margin-right:auto;
+    margin: 0 auto;
     text-align:center;
-    width:25%;
+    width:80%;
+    overflow: auto;
 }
 .aboutMep{
     width:70%;
@@ -96,7 +96,7 @@ header h1 {
     width:300px;
     height:200px;
     margin-bottom: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 20px;
 }
 
 .match{
@@ -153,34 +153,28 @@ header h1 {
 
 }
 @media (max-width: 768px) {
-    .browseprofiles{
-        display:inline;
+    .header3 {
+        width: 90%;
     }
-    #profile1, #profile2, #profile3, #profile4 ,#profile5, #profile6{
-        margin-top: 20px;
+    #myPawfile {
+        margin-right: 5%;
     }
+    .browseprofiles div {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
     header h1 {
-        padding-left:5px;
+        font-size: 1.5rem;
     }
-}
-
-@media (max-width: 600px) {
-    .browseprofiles{
-        display:inline;
+    .header3 {
+        width: 100%;
     }
-    #profile1, #profile2, #profile3, #profile4 ,#profile5, #profile6{
-        margin-top: 20px;
+    #myPawfile {
+        display: none;
     }
-}
-
-@media (max-width: 320px) {
-    .browseprofiles{
-        display:inline;
-    }
-    #profile1, #profile2, #profile3, #profile4 ,#profile5, #profile6{
-        margin-top: 20px;
-    }
-    header{
-        height: 200px;
+    .browseprofiles div {
+        width: 100%;
     }
 }
