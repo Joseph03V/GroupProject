@@ -1,13 +1,33 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arrial, sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     height: 100vh;
     margin: 0;
     background-color: lightpink;
 }
+header {
+    width: 100%;
+    height: 150px;
+    border: 2px solid black;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
 
+#header{
+    display: flex;
+    justify-content: space-around;
+}
+
+#icon{
+    width: 100px;
+    height: 100px;
+}
 #profile-card {
     background-color: lightblue;
     border: 1px solid #ccc;
@@ -17,11 +37,10 @@ body {
     text-align: center;
     max-width: 400px;
     width: 100%;
-    margin-top: 250px;
-    padding-top: 200px;
+    margin-top: 20px;
 }
 .image{
-    border-radius: 180%;
+    border-radius: 50%;
 }
 #profile-pic {
     max-width: 225px;
@@ -80,12 +99,12 @@ button:hover {
     width:300px;
     height:200px;
 }
-@media (max-width: 600px){
-    .profile-card {
-        max-width: 90%
+@media (max-width: 600px) {
+    #profile-card {
+        max-width: 90%;
     }
 
-    .image{
+    .image {
         width: 150px;
         height: 150px;
     }

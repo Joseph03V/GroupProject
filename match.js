@@ -35,7 +35,8 @@ function calculate() {
   })
   .then(response => response.json())
   .then(json => {
-      console.log(json);
+      let percentage = json.percentage
+      document.getElementById('message').textContent = `Your compatibilaty is ${percentage}%`
   })
   .catch(error => console.error(error));
 }
