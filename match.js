@@ -8,7 +8,7 @@ function checkMatch() {
     var messageElement = document.getElementById('message')
 
     if (randomNumber % 2 === 0) {
-        messageElement.textContent = "Congratulations! They snifffed you back at" + currentDay + "!"
+        messageElement.textContent = "Congratulations! They snifffed you back on " + currentDay + "!"
     } else {
         messageElement.textContent = "Sorry pal, they don't want to sniff you."
     }
@@ -17,26 +17,6 @@ function checkMatch() {
 var matchButton = document.getElementById('match')
 matchButton.addEventListener("click", checkMatch)
 
-// let calculateButton = document.getElementById('calculate')
-// calculateButton.addEventListener('click', calculate)
-// function calculate() {
-//     let link = 'https://love-calculator.p.rapidapi.com/love-calculator'
-//     fetch(link, {
-//         method: 'GET',
-//         url: 'https://the-love-calculator.p.rapidapi.com/love-calculator',
-//         params: {
-//           fname: 'martin',
-//           sname: 'anissa'
-//         },
-//         headers: {
-//           'X-RapidAPI-Key': '4ac4ca9a4cmsh19bcbe5ca1ee2adp1860a4jsn4c908e1e77ab',
-//           'X-RapidAPI-Host': 'the-love-calculator.p.rapidapi.com'
-//         },
-//         body: JSON.stringify(response)
-//       })
-//     .then(response => response.json())
-//     .then(json => console.log(json))
-//     }
 let calculateButton = document.getElementById('calculate')
 calculateButton.addEventListener('click', calculate)
 function calculate() {
@@ -59,3 +39,4 @@ function calculate() {
   })
   .catch(error => console.error(error));
 }
+
