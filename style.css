@@ -85,6 +85,10 @@ span h4 {
     background-color: lightblue;
     margin-top: 400px;
 }
+#foot p {
+    display: flex;
+    justify-content: space-around;
+}
 #searchbutton {
     margin-left: 50px;
 }
