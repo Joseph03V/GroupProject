@@ -27,7 +27,7 @@ header h1 {
     margin-bottom:5%;
     font-family: 'Crete Round', serif;
     background-color: lightpink;
-    width:fit-content;
+    width:max-content;
     width:25%;
     text-align: center;
     border:1px solid black;
@@ -42,8 +42,11 @@ header h1 {
 #media{
     margin-top: 3%;
 }
-#aboutme{
+.aboutme{
     margin-bottom: 1%;
+}
+#email {
+    width:max-content
 }
 #aboutmeinfo{
     display:block;
@@ -60,12 +63,9 @@ header h1 {
 #relationshipgoal{
     margin-bottom: 0;
 }
-
-
 #checkbox{
     text-align: center;
 }
-
 .browseprofiles{
     display:flex;
     flex-direction: row;
